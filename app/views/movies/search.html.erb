@@ -1,0 +1,11 @@
+<h1>liste des films de la recherche</h1>
+<table>
+<%  @search.each do |result|%>
+<tr>
+        <td><%= result.title %></td>
+        <td><%= image_tag result.poster_path %></td>
+        <td><%= result.overview %></td>
+        <td><%= result.tagline %></td>
+</tr>
+<% end %>
+</table>
